@@ -8,13 +8,13 @@ namespace MySolution.D2.Data
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Data.Entity.Spatial;
 
-    [Table(nameof(Employee))]
-    public partial class Employee2
+    //[Table(nameof(Employee))]
+    public partial class Employee
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Employee2()
+        public Employee()
         {
-            //Tasks = new HashSet<Task>();
+            Tasks = new HashSet<Task>();
         }
 
         public int Id { get; set; }
@@ -28,6 +28,6 @@ namespace MySolution.D2.Data
         public DateTime? Birthday { get; set; }
 
         //[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        //public virtual ICollection<Task> Tasks { get; set; }
+        public virtual ICollection<Task> Tasks { get; set; }
     }
 }

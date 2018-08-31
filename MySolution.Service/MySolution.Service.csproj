@@ -50,6 +50,8 @@
     <Compile Include="EmployeeRepository.cs" />
     <Compile Include="IEmployeeRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VIewModels\EmployeeViewModel.cs" />
+    <Compile Include="VIewModels\TaskViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MySolution.D2.Data\MySolution.D2.Data.csproj">

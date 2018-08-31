@@ -5,7 +5,7 @@ using System.ComponentModel;
 
 namespace MySolution.Module.D2 {
     //[DefaultClassOptions, ImageName("BO_Employee")]
-    public class Employee {
+    public class Employee2 {
         [Browsable(false)]
         public int Id { get; set; }
         public string FirstName { get; set; }

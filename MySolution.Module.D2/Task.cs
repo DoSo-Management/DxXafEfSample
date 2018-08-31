@@ -1,3 +1,4 @@
+using MySolution.D2.Data;
 using System.ComponentModel;
 //using DevExpress.Persistent.Base;
 

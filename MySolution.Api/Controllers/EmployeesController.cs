@@ -7,6 +7,8 @@ using System.Net.Http;
 using System.Web.Http;
 using MySolution.D2.Data;
 using MySolution.Module.D2;
+using MySolution.Api.Models;
+using MySolution.Service.VIewModels;
 
 namespace MySolution.Api.Controllers
 {
@@ -20,16 +22,34 @@ namespace MySolution.Api.Controllers
         }
 
         // GET api/<controller>
-        public IEnumerable<Employee> Get()
+        public IEnumerable<EmployeeViewModel> Get()
         {
             var data = _employeeRepository.GetEmployees();
-            return data;
+
+            return data.Select(s => new EmployeeViewModel
+            {
+                Id = s.Id,
+                Birthday = s.Birthday,
+                FirstName = s.FirstName,
+                LastName = s.LastName,
+                MiddleName = s.MiddleName
+                //Tasks = s.Tasks.ToList()
+            });
         }
 
         // GET api/<controller>/5
-        public Employee Get(int id)
+        public EmployeeViewModel Get(int id)
         {
-            return _employeeRepository.GetEmployee(id);
+            var s = _employeeRepository.GetEmployee(id);
+            return new EmployeeViewModel
+            {
+                Id = s.Id,
+                Birthday = s.Birthday,
+                FirstName = s.FirstName,
+                LastName = s.LastName,
+                MiddleName = s.MiddleName
+                //Tasks = s.Tasks.ToList()
+            };
         }
 
         // POST api/<controller>
