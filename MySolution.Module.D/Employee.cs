@@ -4,11 +4,10 @@ using System.Linq;
 using System.Text;
 //using DevExpress.Persistent.Base;
 using System.ComponentModel;
-using DevExpress.Persistent.Base;
 
 namespace MySolution.Module {
-    [DefaultClassOptions, ImageName("BO_Employee")]
-    public class Employee2 {
+    //[DefaultClassOptions, ImageName("BO_Employee")]
+    public class Employee {
         [Browsable(false)]
         public int Id { get; protected set; }
         public string FirstName { get; set; }

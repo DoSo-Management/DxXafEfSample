@@ -19,7 +19,7 @@ namespace MySolution.Win {
             Application.SetCompatibleTextRenderingDefault(false);
             MySolutionWindowsFormsApplication winApplication = new MySolutionWindowsFormsApplication();
             winApplication.ConnectionString = 
-                "Integrated Security=SSPI;Pooling=false;Data Source=localhost;Initial Catalog=CodeFirstEntityFrameworkExample2";
+                "Integrated Security=SSPI;Pooling=false;Data Source=localhost;Initial Catalog=CodeFirstEntityFrameworkExample4";
             try {
                 winApplication.Setup();
                 winApplication.Start();
