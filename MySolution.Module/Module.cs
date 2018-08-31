@@ -8,6 +8,7 @@ using System.Data.Entity;
 using System.Reflection;
 using DevExpress.ExpressApp.DC;
 using DevExpress.Persistent.Base;
+using MySolution.Module.D2;
 
 
 namespace MySolution.Module {

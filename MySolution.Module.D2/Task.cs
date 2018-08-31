@@ -1,12 +1,9 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-//using DevExpress.Persistent.Base;
 using System.ComponentModel;
+//using DevExpress.Persistent.Base;
+
 //using DevExpress.ExpressApp.DC;
 
-namespace MySolution.Module {
+namespace MySolution.Module.D2 {
     //[DefaultClassOptions, ImageName("BO_Task")]
     public class Task {
         [Browsable(false)]

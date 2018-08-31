@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Data.Entity;
+using MySolution.Module.D2;
 
 namespace MySolution.Module {
     public class MyDbContext : DbContext {

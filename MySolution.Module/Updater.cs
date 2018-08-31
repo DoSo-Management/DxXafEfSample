@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using DevExpress.ExpressApp.Updating;
 using DevExpress.ExpressApp;
+using MySolution.Module.D2;
 
 namespace MySolution.Module {
     public class Updater : ModuleUpdater {

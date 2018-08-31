@@ -5,6 +5,7 @@ using System.Text;
 //using DevExpress.Persistent.Base;
 using System.ComponentModel;
 using DevExpress.Persistent.Base;
+using MySolution.Module.D2;
 
 namespace MySolution.Module {
     [DefaultClassOptions, ImageName("BO_Employee")]
