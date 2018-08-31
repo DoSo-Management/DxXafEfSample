@@ -13,15 +13,17 @@ namespace MySolution.D2.Data
         {
         }
 
+        public Model1(string nameOrConnectionString) : base(nameOrConnectionString) { }
+
         public virtual DbSet<Employee> Employees { get; set; }
         public virtual DbSet<Task> Tasks { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             //modelBuilder.Entity<Employee>()
-                //.HasMany(e => e.Tasks)
-                //.WithOptional(e => e.Employee)
-                //.HasForeignKey(e => e.AssignedTo_Id);
+            //.HasMany(e => e.Tasks)
+            //.WithOptional(e => e.Employee)
+            //.HasForeignKey(e => e.AssignedTo_Id);
         }
     }
 }

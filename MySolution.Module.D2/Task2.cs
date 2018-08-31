@@ -8,7 +8,8 @@ namespace MySolution.D2.Data
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Data.Entity.Spatial;
 
-    public partial class Task
+    [Table(nameof(Task))]
+    public partial class Task2
     {
         public int Id { get; set; }
 
