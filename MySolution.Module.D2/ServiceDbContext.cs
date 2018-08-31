@@ -6,14 +6,14 @@ namespace MySolution.D2.Data
     using System.Linq;
     using MySolution.Module.D2;
 
-    public partial class Model1 : DbContext
+    public partial class ServiceDbContext : DbContext
     {
-        public Model1()
+        public ServiceDbContext()
             : base("name=Model4")
         {
         }
 
-        public Model1(string nameOrConnectionString) : base(nameOrConnectionString) { }
+        public ServiceDbContext(string nameOrConnectionString) : base(nameOrConnectionString) { }
 
         public virtual DbSet<Employee> Employees { get; set; }
         public virtual DbSet<Task> Tasks { get; set; }

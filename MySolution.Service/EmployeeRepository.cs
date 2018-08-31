@@ -10,9 +10,9 @@ namespace MySolution.Service
 {
     public class EmployeeRepository : IEmployeeRepository
     {
-        private readonly Model1 _context;
+        private readonly ServiceDbContext _context;
 
-        public EmployeeRepository(Model1 context)
+        public EmployeeRepository(ServiceDbContext context)
         {
             _context = context;
         }

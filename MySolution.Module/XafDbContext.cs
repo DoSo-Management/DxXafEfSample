@@ -7,7 +7,7 @@ using MySolution.Module.D2;
 using Task = MySolution.Module.D2.Task;
 
 namespace MySolution.Module {
-    public class XafDbContext : Model1
+    public class XafDbContext : ServiceDbContext
     {
         public XafDbContext(string connectionString) : base(connectionString) { }
         //public DbSet<Employee> Employees { get; set; }

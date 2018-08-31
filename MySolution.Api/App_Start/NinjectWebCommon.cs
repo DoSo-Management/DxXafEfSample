@@ -45,7 +45,7 @@ namespace MySolution.Api.App_Start
         private static void RegisterServices(IKernel kernel)
         {
             var connectionString = ConfigurationManager.ConnectionStrings["Model4"].ConnectionString;
-            kernel.Bind<Model1>().ToSelf().WithConstructorArgument("connectionString", connectionString); ;
+            kernel.Bind<ServiceDbContext>().ToSelf().WithConstructorArgument("connectionString", connectionString); ;
             kernel.Bind<IEmployeeRepository>().To<EmployeeRepository>();
         }
     }
