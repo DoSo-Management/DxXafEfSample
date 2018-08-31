@@ -6,6 +6,7 @@ using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 using MySolution.D2.Data;
+using MySolution.Module.D2;
 
 namespace MySolution.Api.Controllers
 {

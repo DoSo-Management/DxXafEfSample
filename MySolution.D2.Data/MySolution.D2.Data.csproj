@@ -50,14 +50,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Employee.cs" />
-    <Compile Include="Model1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Task.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MySolution.Module.D2\MySolution.Module.D2.csproj">
+      <Project>{F1721C30-A4D0-4B77-9341-2BC38A1818B5}</Project>
+      <Name>MySolution.Module.D2</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
