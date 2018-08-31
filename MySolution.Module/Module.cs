@@ -15,7 +15,7 @@ namespace MySolution.Module {
     public sealed partial class MySolutionModule : ModuleBase {
         public MySolutionModule() {
             InitializeComponent();
-            Database.SetInitializer<MyDbContext>(new DropCreateDatabaseIfModelChanges<MyDbContext>());
+            Database.SetInitializer<XafDbContext>(new DropCreateDatabaseIfModelChanges<XafDbContext>());
        }
 
         public override void CustomizeTypesInfo(ITypesInfo typesInfo)

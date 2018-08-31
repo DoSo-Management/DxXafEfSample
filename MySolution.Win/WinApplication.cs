@@ -17,7 +17,7 @@ namespace MySolution.Win {
 
         protected override void CreateDefaultObjectSpaceProvider(CreateCustomObjectSpaceProviderEventArgs args) {
             args.ObjectSpaceProvider = new EFObjectSpaceProvider(
-                typeof(MyDbContext), args.ConnectionString);
+                typeof(XafDbContext), args.ConnectionString);
         }
 
         
